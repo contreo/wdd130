@@ -31,19 +31,31 @@ p {
 main {
     max-width: 800px;
 }
-aside {
-    position: absolute;
-    top: 500px;
+aside image {
+   /*position: absolute;*/
+    /*border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;*/
+   /* top: 500px;*/
+   width: 200px;
+   height: auto;
     left: 150px;
     width: 20rem;
     text-align: center;
 }
-    main img {
-    width: 150px;
-    height: auto;
+aside h2 {
     position: absolute;
+    top: 50px;
+    left: 150px;
+}
+    main img {
+    width: 200px;
+    height: auto;
+    float: right;
+    /*position: absolute;*/
 }
 p {padding: 0;}
+
 footer {
  margin-top: 20px;
  border-top: 1px solid black;
