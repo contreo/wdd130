@@ -6,6 +6,19 @@
     --accent3-colour: #035E7B;
 
 }
+header{
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+header img {
+    display: grid;
+    width: 100px;
+    height: auto;
+
+}
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
@@ -29,4 +42,12 @@ h2 {
 }
 .hero div {
     position: relative;
+}
+section img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+
 }
