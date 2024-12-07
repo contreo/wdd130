@@ -68,8 +68,6 @@ p {
     opacity: 0.9;
 }
 section img {
-    width: 100px;
-    height: auto;
     display: flex;
     flex-direction: column; 
     grid-template-columns: 5fr;
@@ -77,13 +75,9 @@ section img {
     justify-content: space-around;
 }
 footer {
-    margin-top: solid black;
+    margin-top: 10px;
 }
 footer img {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 5fr;
-    align-items: left;
-    width: 30x;
+    width: 30px;
     height: auto;
 }
