@@ -3,18 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: darkblue;
     padding: 10px;
+    box-sizing: border-box;
 }
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 30px;
+    text-decoration: none;
+    font-weight: 600;;
 }
 
 h1 {
     color: darkblue;
+    border-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    padding: 10px;
+}
+.grid {
+    display: grid;
+    align-items: center;
+}
+main {
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 img {
@@ -24,12 +48,11 @@ img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-
-p {
-    padding: 10px;
-}
-main {
-    max-width: 800px;
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside image {
    /*position: absolute;*/
@@ -45,11 +68,12 @@ aside image {
 }
 aside h2 {
     position: absolute;
-    top: 50px;
+    top: 90px;
     left: 150px;
+    color: white;
 }
     main img {
-    width: 200px;
+    width: 150px;
     height: auto;
     float: right;
     /*position: absolute;*/
@@ -66,6 +90,6 @@ footer {
     margin: 1rem;
     border: 1px solid black;
     padding: 1rem;
-    background-color: white;
+    background-color: rgb(229, 244, 249);
     color: black;
 }
