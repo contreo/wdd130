@@ -4,8 +4,8 @@
     --accent1-colour: #188B2D;
     --accent2-colour: #98838F;
     --accent3-colour: #035E7B;
-
 }
+
 header{
     background-color: var(--secondary-colour);
     margin: 1rem auto;
@@ -14,12 +14,16 @@ header{
     align-items: center;
     border-bottom: 1px solid black;
 }
+
 header img {
     margin: 2px;
     width: 80px;
     height: auto;
-
 }
+header nav {
+    
+}
+
 body {
     background-color: var(--primary-colour);
     font-family: "Open Sans", sans-serif;
@@ -28,34 +32,42 @@ body {
 
 .hero {
     position: relative;
-}
-h1 {
     display: block;
-    top: 10px;
-    left: 150px;
-    text-align: center;
+}
+
+.hero h1 {
+    display: inline-block;    
     position: absolute;
+    left: 250px;
+    top: 10px;
+    text-align: center;
     font-family: "Lora", serif;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 3rem;
     color: var(--accent1-colour);
 }
+
 img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
+
 article {
-    display: block;
+    display: inline-block;
     position: absolute;
     top: 100px;
     opacity: 0.7;
     background-color: var(--secondary-colour);
 }
+
 article img {
     width: 10px;
     height: auto;
+    display: inline;
     position: absolute;
+    float: right;
     top: 100px;
     opacity: 0.9;
 }
@@ -64,18 +76,37 @@ p {
     opacity: 0.9;
 }
 section {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr)
+    display: flex;
 }
+
 h2 {
+    position: inherit;
     text-align: center;
     font-family: "Lora", serif;
-    font-weight: 400;
+    font-weight: 600;
+    color: var(--accent2-colour);
+}
+
+.triple {
+    display: flex;
+    margin: 0 auto;
+}
+
+.triple img {
+    width: auto;
+    height: auto;
+    margin: 5px;
+    padding: 20px;
+
+}
+section p{
+    margin: 5px;
+    padding: 40px;
 }
 section img{
     display: flex;
     flex-direction: column; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, fr);
     align-items: center;
     justify-content: space-around;
 }
