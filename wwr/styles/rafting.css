@@ -128,3 +128,19 @@ footer img {
     width: 30px;
     height: auto;
 }
+
+.trip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    justify-content: space-around;
+    gap: 15px;
+}
+.trip h1 {
+    text-align: center;
+    padding: 5%;
+}
+.trip p {
+    padding: 20px;
+
+}
