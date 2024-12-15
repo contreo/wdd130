@@ -114,7 +114,7 @@ section p{
 section img{
     display: flex;
     flex-direction: column; 
-    grid-template-columns: repeat(5, fr);
+   /** grid-template-columns: repeat(5, fr);**/
     align-items: center;
     justify-content: space-around;
 }
