@@ -10,7 +10,7 @@ header{
     background-color: var(--secondary-colour);
     margin: 1rem auto;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     border-bottom: 1px solid black;
 }
@@ -20,8 +20,12 @@ header img {
     width: 80px;
     height: auto;
 }
-header nav {
-    
+.hero nav{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+     
+       
 }
 
 body {
@@ -35,11 +39,11 @@ body {
     display: block;
 }
 
-.hero h1 {
+h1 {
     display: inline-block;    
     position: absolute;
     left: 250px;
-    top: 10px;
+    top: 5%;
     text-align: center;
     font-family: "Lora", serif;
     font-weight: 600;
@@ -54,19 +58,21 @@ img {
     object-fit: cover;
 }
 
-article {
-    display: inline-block;
+div article {
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
     position: absolute;
-    top: 100px;
+    top: 30%;
     opacity: 0.7;
     background-color: var(--secondary-colour);
 }
 
-article img {
-    width: 10px;
-    height: auto;
-    display: inline;
-    position: absolute;
+div article img {
+    width: 100px;
+    height: auto; 
+    padding-right: 20px;
     float: right;
     top: 100px;
     opacity: 0.9;
@@ -76,7 +82,9 @@ p {
     opacity: 0.9;
 }
 section {
+    margin: 0 auto;
     display: flex;
+
 }
 
 h2 {
