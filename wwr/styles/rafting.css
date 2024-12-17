@@ -61,7 +61,6 @@ img {
 div article {
     margin: 0 auto;
     padding: 1.5rem;
-    display: flex;
     align-items: center;
     position: absolute;
     top: 30%;
@@ -120,6 +119,7 @@ section img{
 }
 footer {
     border-top: solid black;
+    padding: 15px;
     margin-top: 10px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -128,7 +128,7 @@ footer img {
     width: 30px;
     height: auto;
 }
-
+/** Trip page **/
 .trip {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -143,4 +143,69 @@ footer img {
 .trip p {
     padding: 20px;
 
+}
+
+
+/** Contact Us page **/
+.employ {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 1.5rem;
+    border-bottom: solid black;
+}
+.employ h1{
+    text-align: center;
+    border-top: 1.5rem;
+}
+.contact {
+    margin: 0 auto;
+    padding: 25px;
+    width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+    border-bottom: solid black;
+}
+iframe {
+    margin: 0 auto;
+    display: block;
+}
+p {
+    text-align: center;
+}
+address {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 5px;  
+    margin: 2px;
+    padding: 10px;
+    border: 1px solid black;
+}
+textarea {
+    width: 100%;
+}
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    font-size: 1.2rem;
+    border: 1px;
+    border-radius: 20px;
+}
+button:hover {
+    background-color: red;
 }
