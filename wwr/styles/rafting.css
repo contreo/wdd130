@@ -133,6 +133,7 @@ footer img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
+    padding: 20px;
     justify-content: space-around;
     gap: 15px;
 }
@@ -142,7 +143,44 @@ footer img {
 }
 .trip p {
     padding: 20px;
+}
 
+table {
+    margin: 0 auto;
+    display: flexbox;
+    justify-content: center;
+    background-color: var(--accent1-colour);
+    border-collapse: collapse;
+    border: 2px solid black;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+caption {
+    caption-side: top;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-color: var(--secondary-colour);
+    color: var(--accent3-colour);
+}
+
+thead {
+    background-color: var(--accent3-colour);
+}
+
+th,
+td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+.homecontact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.homecontact p {
+    font-size: 1.8rem;
 }
 
 
