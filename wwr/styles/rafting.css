@@ -20,10 +20,14 @@ header img {
     width: 80px;
     height: auto;
 }
-.hero nav{
-    display: flex;
-    flex-direction: column;
+
+a {
     text-decoration: none;
+}
+nav{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
      
        
 }
@@ -120,8 +124,9 @@ section img{
 footer {
     border-top: solid black;
     padding: 15px;
-    margin-top: 10px;
+    margin-top: 50px;
     display: grid;
+    background-color: var(--secondary-colour);
     grid-template-columns: 2fr 1fr 1fr 1fr;
 }
 footer img {
@@ -129,6 +134,9 @@ footer img {
     height: auto;
 }
 /** Trip page **/
+.ourtrip {
+    position: inherit;
+}
 .trip {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -139,7 +147,9 @@ footer img {
 }
 .trip h1 {
     text-align: center;
-    padding: 5%;
+    padding: 20px;
+    margin: 2px;
+    position: inherit;
 }
 .trip p {
     padding: 20px;
@@ -147,7 +157,6 @@ footer img {
 
 table {
     margin: 0 auto;
-    display: flexbox;
     justify-content: center;
     background-color: var(--accent1-colour);
     border-collapse: collapse;
@@ -175,12 +184,16 @@ td {
     border: 1px solid gray;
     padding: 10px;
 }
-.homecontact {
+.hometripcontact {
     display: grid;
+    gap: 15px;
     grid-template-columns: 1fr 1fr;
 }
-.homecontact p {
+.hometripcontact p {
     font-size: 1.8rem;
+    color: var(--secondary-colour);
+    font-weight: bolder;
+    background-color: var(--accent2-colour);
 }
 
 
@@ -246,4 +259,25 @@ button {
 }
 button:hover {
     background-color: red;
+}
+
+/** Home (index) page **/
+.home {
+    position: inherit;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    border-top: solid gray;
+}
+
+.form-item {
+    background-color: var(--accent2-colour);
+    color: var(--secondary-colour);
+    font-size: 1.2rem;
+    display: grid;
+    padding: 10px;
+
 }
